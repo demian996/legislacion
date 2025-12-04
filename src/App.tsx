@@ -1,20 +1,14 @@
-import './App.css'
-import { EmblaCarousel } from './components/Carousel'
-import { Navbar } from './components/Navbar'
-import { Footer } from './components/Footer'
+import './App.css';
 
 function App() {
-
   return (
-    <>
-      <Navbar />
-      <main className="container mx-auto mt-8">
-        <h1 className="text-3xl font-bold mb-8 text-center">Modern React App</h1>
-        <EmblaCarousel />
-      </main>
-      <Footer />
-    </>
-  )
+    <div className="App">
+      <header className="App-header">
+        <h1>Bienvenido a tu aplicación React</h1>
+        <p>Este es un punto de partida limpio.</p>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;

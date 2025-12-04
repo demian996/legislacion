@@ -1,13 +1,39 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myapp</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard del Libro en Ecuador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard del Libro en Ecuador</h1>
+            <div class="theme-switcher">
+                <label for="theme-switch">Modo Oscuro</label>
+                <input type="checkbox" id="theme-switch">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#resumen" class="active">Resumen</a></li>
+                <li><a href="#produccion">Producción Editorial</a></li>
+                <li><a href="#comercio">Comercio Exterior</a></li>
+                <li><a href="#habitos">Hábitos de Lectura</a></li>
+                <li><a href="#librerias">Librerías</a></li>
+            </ul>
+        </nav>
+        <main id="content">
+            <!-- El contenido del dashboard se cargará aquí -->
+        </main>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,17 +1,15 @@
-
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-  padding: 1rem;
-  background-color: #eee;
-  border: 1px solid #ddd;
+/* Estilos para App.css */
+.App {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
